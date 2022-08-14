@@ -1,3 +1,27 @@
 div {
     padding: 10px;
 }
+p,li {
+    color: white;
+}
+u {
+    color: lightblue;
+}
+h1 {
+    display: block;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px dodgerblue;
+}
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: darkgoldenrod;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
