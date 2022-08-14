@@ -10,7 +10,7 @@
     <img src="images/logo.png" alt="USM Logo">
     <h1>Overview</h1>
     <p><a href="https://github.com/IgorKruchinin/USM/">Get source code</a></p>
-    <p>USM is Universal Storage Manager for create profiles. It's writes data in .uto file (Usm Text Object)</p>
+    <p>USM is Universal Storage Manager for creating profiles. It's writes data in .uto file (Usm Text Object)</p>
     <p>Example of .uto file:</p>
     <u class="ex">i&ltsectionname&gt146|&lt\e&gt587|&lt\e&gt</u>
     <p>Coding 146 and 587 int values</p>
@@ -32,5 +32,6 @@
     bool is_opened = ps.opened(); // Returns 1 if ProfileStorage are opened from .uto file in constructor, and 0 if the ProfileStorage created clear (Usually the first profile opening</u>
     <h1>Compilation:</h1>
     <p>Compiles with linking with USM.cpp and Section.cpp files</p>
+    <p><strong>Warning!</strong>Add "bool USM_CONFIG::InTextMode = 1;" in your main cpp file in global space</p>
 </body>
 </html>
