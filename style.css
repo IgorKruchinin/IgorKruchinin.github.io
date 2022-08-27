@@ -14,12 +14,66 @@ h1 {
     color: #00539F;
     text-shadow: 3px 3px 1px dodgerblue;
 }
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+nav a {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #f5e438;
+}
+nav li a {
+    border-right: 1px solid #f5e438;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+    border-right: 0;
+}
+nav a:hover, nav a:active {
+    background-color: #f6c263;
+}
+nav a#pull {
+    display: none;
+}
 body {
     width: 600px;
     margin: 0 auto;
     background-color: darkgoldenrod;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
+}
+nav {
+    height: 40px;
+    width: 100%;
+    background: #a0860b;
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+nav li {
+    display: inline;
+    float: left;
 }
 img {
     display: block;
