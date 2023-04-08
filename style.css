@@ -32,10 +32,10 @@ nav a {
     text-align: center;
     text-decoration: none;
     line-height: 40px;
-    text-shadow: 1px 1px 0px #f5e438;
+    text-shadow: 1px 1px 0px #6C6C6C;
 }
 nav li a {
-    border-right: 1px solid #f5e438;
+    border-right: 1px solid #6C6C6C;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -44,7 +44,7 @@ nav li:last-child a {
     border-right: 0;
 }
 nav a:hover, nav a:active {
-    background-color: #f6c263;
+    background-color: #f2f2f2;
 }
 nav a#pull {
     display: none;
@@ -52,7 +52,7 @@ nav a#pull {
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: darkgoldenrod;
+    background-color: 7C7C7C;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
 }
