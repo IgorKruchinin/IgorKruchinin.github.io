@@ -87,11 +87,11 @@
             profile.gets("StringSectionName").add(127); // Adds the 127 value into your int section<br><br>
             profile.geti("IntSectionName").add("Hello!"); // Adds the "Hello!" value into your string section<br><br>
             profile.to_file(); // Writes changes to NameOfYourProfileStorage.uto file;<br><br>
-            int size = ps.gets("StringSectionName").size(); // Returns and write into the "size" variable count of objects in your string section<br><br>
-            int size = ps.geti("IntSectionName").size(); // Returns and write into the "size" variable count of objects in your int section<br><br>
-            int a = ps.geti("IntSectionName")[0]; // Return and write into the "a" variable element with index 0 from your int section<br><br>
-            String b = ps.gets("IntSectionName")[0]; // Return and write into the "b" variable element with index 0 from your string section<br><br>
-            boolean is_opened = ps.opened(); // Returns 1 if ProfileStorage are opened from .uto file in constructor, and 0 if the ProfileStorage created clear (Usually the first profile opening</u><br>
+            int size = profile.gets("StringSectionName").size(); // Returns and write into the "size" variable count of objects in your string section<br><br>
+            int size = profile.geti("IntSectionName").size(); // Returns and write into the "size" variable count of objects in your int section<br><br>
+            int a = profile.geti("IntSectionName")[0]; // Return and write into the "a" variable element with index 0 from your int section<br><br>
+            String b = profile.gets("IntSectionName")[0]; // Return and write into the "b" variable element with index 0 from your string section<br><br>
+            boolean is_opened = profile.opened(); // Returns 1 if ProfileStorage are opened from .uto file in constructor, and 0 if the ProfileStorage created clear (Usually the first profile opening</u><br>
 		<p><a href="https://github.com/IgorKruchinin/USM-Java">Get source code</a></p>
         </div>
     </div>
