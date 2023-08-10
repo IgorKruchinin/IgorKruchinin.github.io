@@ -22,21 +22,47 @@
     <p>"i" before &ltsectionname&gt is a format specifier. The "i" mean integer, also possible the "s" format specifier (means string). Next comes the name of section. Next comes int or string values, each of them ends as |&lt\e&gt</p>
     <u class="ex">s&ltsectionname&gtHello|&lt\e&gtIt's wonderful|&lt\e&gt</u>
     <p>Coding "Hello" and "It's wonderful" string values</p>
-    <h1>API Description:</h1>
-    <p>Include "USM/USM.h" and define a Profile Storage object as first:</p>
-    <u>ProfileStorage ps("NameOfYourProfileStorage");<br><br>
-    ps.create_ssec("StringSectionName"); // Creates a string section<br><br>
-    ps.create_isec("IntSectionName"); // Creates a int section<br><br>
-    ps.gets("StringSectionName").add(127); // Adds the 127 value into your int section<br><br>
-    ps.geti("IntSectionName").add("Hello!"); // Adds the "Hello!" value into your string section<br><br>
-    ps.to_file(); // Writes changes to NameOfYourProfileStorage.uto file;<br><br>
-    size_t size = ps.gets("StringSectionName").size(); // Returns and write into the "size" variable count of objects in your string section<br><br>
-    size_t size = ps.geti("IntSectionName").size(); // Returns and write into the "size" variable count of objects in your int section<br><br>
-    int a = ps.geti("IntSectionName")[0]; // Return and write into the "a" variable element with index 0 from your int section<br><br>
-    std::string b = ps.gets("IntSectionName")[0]; // Return and write into the "b" variable element with index 0 from your string section<br><br>
-    bool is_opened = ps.opened(); // Returns 1 if ProfileStorage are opened from .uto file in constructor, and 0 if the ProfileStorage created clear (Usually the first profile opening</u>
-    <h1>Compilation:</h1>
-    <p>Compiles with linking with USM.cpp and Section.cpp files</p>
-    <p><strong>Warning!</strong>Add "bool USM_CONFIG::InTextMode = 1;" in your main cpp file in global space</p>
+    <div class="tabs">
+        <input type="radio" name="inset" value="" id="CPP">
+        <label for="CPP">C++ Version</label>
+        <input type="radio" name="inset" value="" id="Java">
+        <label for="CPP">Java Version</label>
+        <div id="CPP">
+            <h1>API Description:</h1>
+            <p>Include "USM/USM.h" and define a Profile Storage object as first:</p>
+            <u>ProfileStorage ps("NameOfYourProfileStorage");<br><br>
+            ps.create_ssec("StringSectionName"); // Creates a string section<br><br>
+            ps.create_isec("IntSectionName"); // Creates a int section<br><br>
+            ps.gets("StringSectionName").add(127); // Adds the 127 value into your int section<br><br>
+            ps.geti("IntSectionName").add("Hello!"); // Adds the "Hello!" value into your string section<br><br>
+            ps.to_file(); // Writes changes to NameOfYourProfileStorage.uto file;<br><br>
+            size_t size = ps.gets("StringSectionName").size(); // Returns and write into the "size" variable count of objects in your string section<br><br>
+            size_t size = ps.geti("IntSectionName").size(); // Returns and write into the "size" variable count of objects in your int section<br><br>
+            int a = ps.geti("IntSectionName")[0]; // Return and write into the "a" variable element with index 0 from your int section<br><br>
+            std::string b = ps.gets("IntSectionName")[0]; // Return and write into the "b" variable element with index 0 from your string section<br><br>
+            bool is_opened = ps.opened(); // Returns 1 if ProfileStorage are opened from .uto file in constructor, and 0 if the ProfileStorage created clear (Usually the first profile opening</u>
+            <h1>Compilation:</h1>
+            <p>Compiles with linking with USM.cpp and Section.cpp files</p>
+            <p><strong>Warning!</strong>Add "bool USM_CONFIG::InTextMode = 1;" in your main cpp file in global space</p>
+        </div>
+        <div id="Java">
+            <h1>API Description:</h1>
+            <p>Include "USM/USM.h" and define a Profile Storage object as first:</p>
+            <u>ProfileStorage ps("NameOfYourProfileStorage");<br><br>
+            ps.create_ssec("StringSectionName"); // Creates a string section<br><br>
+            ps.create_isec("IntSectionName"); // Creates a int section<br><br>
+            ps.gets("StringSectionName").add(127); // Adds the 127 value into your int section<br><br>
+            ps.geti("IntSectionName").add("Hello!"); // Adds the "Hello!" value into your string section<br><br>
+            ps.to_file(); // Writes changes to NameOfYourProfileStorage.uto file;<br><br>
+            size_t size = ps.gets("StringSectionName").size(); // Returns and write into the "size" variable count of objects in your string section<br><br>
+            size_t size = ps.geti("IntSectionName").size(); // Returns and write into the "size" variable count of objects in your int section<br><br>
+            int a = ps.geti("IntSectionName")[0]; // Return and write into the "a" variable element with index 0 from your int section<br><br>
+            std::string b = ps.gets("IntSectionName")[0]; // Return and write into the "b" variable element with index 0 from your string section<br><br>
+            bool is_opened = ps.opened(); // Returns 1 if ProfileStorage are opened from .uto file in constructor, and 0 if the ProfileStorage created clear (Usually the first profile opening</u>
+            <h1>Compilation:</h1>
+            <p>Compiles with linking with USM.cpp and Section.cpp files</p>
+            <p><strong>Warning!</strong>Add "bool USM_CONFIG::InTextMode = 1;" in your main cpp file in global space</p>
+        </div>
+    </div>
 </body>
 </html>
