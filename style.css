@@ -76,8 +76,8 @@ nav li {
     float: left;
 }
 img {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    margin: 5 auto;
 }
 
 .tabs { width: 100%; padding: 0px; margin: 0 auto; }
